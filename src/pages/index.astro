@@ -2,7 +2,7 @@
 import Layout from '~/layouts/PageLayout.astro';
 
 import Header from '~/components/widgets/Header.astro';
-import Hero from '~/components/widgets/Hero.astro';
+import Hero2 from '~/components/widgets/Hero2.astro';
 import Content from '~/components/widgets/Content.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
 import Features3 from '~/components/widgets/Features3.astro';
@@ -41,18 +41,30 @@ const metadata = {
 
   <!-- Hero2 Widget ******************* -->
 
-  <Hero
-    id="hero"
-    title="Sarah Johnson"
-    tagline="Personal Web Demo"
-    actions={[{ variant: 'primary', text: 'Hire me', href: getPermalink('/contact#form') }]}
+  <Hero2
+    tagline="SaaS Web Demo"
+    actions={[
+      { variant: 'primary', target: '_blank', text: 'Get Started', href: 'https://github.com/onwidget/astrowind' },
+      { text: 'Learn more', href: '#features' },
+    ]}
+    image={{
+      src: 'https://images.unsplash.com/photo-1580481072645-022f9a6dbf27?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+      alt: 'AstroWind Hero Image',
+    }}
   >
-    <Fragment slot="subtitle">
-      I'm a Graphic Designer passionate about crafting visual stories. <br /> With 5 years of experience and a degree from
-      New York University's School of Design. I infuse vitality into brands and designs, transforming concepts into captivating
-      realities.
+    <Fragment slot="title">
+      Continuous Technology <span class="text-accent dark:text-white highlight"
+        >CIO as a Service</span
+      >
     </Fragment>
-  </Hero>
+
+    <Fragment slot="subtitle">
+      <span class="hidden sm:inline">
+        Outgun, outrun and outperform <span class="font-semibold">CIOaaS</span> continuous IT</span
+      >
+      Seamlessly blend the power of Astro 4.0 and Tailwind CSS to craft websites that resonate with your brand and audience.
+    </Fragment>
+  </Hero2>
 
   <!-- Content Widget **************** -->
 
