@@ -11,6 +11,7 @@ import icon from 'astro-icon';
 import compress from '@playform/compress';
 
 import astrowind from './vendor/integration';
+import react from "@astrojs/react";
 
 import {
   readingTimeRemarkPlugin,
@@ -71,7 +72,7 @@ export default defineConfig({
 
     astrowind({
       config: './src/config.yaml',
-    }),
+    }), react()
   ],
 
   image: {
