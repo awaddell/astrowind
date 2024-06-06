@@ -3,6 +3,12 @@ backend:
   repo: awaddell/astrowind
   branch: decapcms
 
+media_library:
+  name: cloudinary
+  config:
+    cloud_name: dhaobum0q
+    api_key: 799333572876976
+
 media_folder: 'src/assets/images'
 public_folder: '/_astro'
 
