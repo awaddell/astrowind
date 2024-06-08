@@ -14,6 +14,7 @@ media_library:
 
 media_folder: 'src/assets/images'
 public_folder: '/_astro'
+publish_mode: editorial_workflow
 
 collections:
   - name: 'post'
