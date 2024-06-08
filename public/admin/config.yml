@@ -2,8 +2,8 @@ backend:
   name: github
   repo: awaddell/astrowind
   branch: decapcms
-  site_domain: astrowind-cioaas.vercel.app
-  base_url: https://astrowind-cioaas.vercel.app # prod URL
+  site_domain: astrowind-cioaas-git-astro-decap-cms-oauth-awaddells-projects.vercel.app
+  base_url: https://astrowind-cioaas-git-astro-decap-cms-oauth-awaddells-projects.vercel.app # prod URL
   auth_endpoint: oauth # the oauth route provided by the integration
 
 media_library:
